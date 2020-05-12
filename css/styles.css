@@ -39,6 +39,7 @@ body {
 .grid-container{
     display: grid;
     grid-template-columns: 1fr;
+    height: 100vh;
 }
 .header a h1 {
     color:var(--secondary);

@@ -300,6 +300,9 @@ footer {
     body {
         font-size: 20px;
     }
+    .welcome-img {
+        margin: auto 20px;
+    }
     .welcome-img img {
         width: 500px;
         height: 500px;
@@ -309,6 +312,27 @@ footer {
     }
     #Contact {
         margin: auto;
+    }
+    .welcome-text  {
+        margin: auto 20px;
+    }
+    .welcome-text h2 {
+        font-size: 72px;
+    }
+    .welcome-text p {
+        font-size: 24px
+    }
+    .btn {
+        width: 150px;
+        height: 50px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    #Projects {
+        height: 60vh;
+    }
+    .project-info {
+        margin: auto auto;
     }
 }
 @media screen and (min-width:1920px) {
@@ -347,7 +371,7 @@ footer {
         text-transform: uppercase;
     }
     #Skills {
-        margin-top: 200px
+        margin-top: 200px;
     }
     #Projects {
         margin-top: 50px;

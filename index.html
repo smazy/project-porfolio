@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Zafar - Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="flex-holder">
+        <a href="/" class="logo"><h1>AZ</h1></a>
+        <div class="hmbgr-cont">
+        <a href="javascript:void(0);" onclick="Navbar()">
+            <i class="fa fa-bars hmbgr"></i>
+            </a>
+        </div>
+        </div>
+        <ul id="menu">
+            <li><a href="#Skills">skills</a></li>
+            <li><a href="#Projects">projects</a></li>
+            <li><a href="#Contact">contact</a></li>
+        </ul>
+            
+    </header>
+    <section class="grid-container">
+        <div class="welcome-text">
+            <h2>Ali Zafar</h2>
+            <p>I'm a software engineer and stock market investor based in Karachi, Pakistan.</p>
+            <button class="btn">view cv</button>
+            <a href="#Projects"><button class="btn">projects</button></a>
+        </div>
+        <div class="welcome-img">
+            <img src="./img/welcome-img.svg" alt="">
+        </div>
+    </section>
+    <section id="Skills">
+        <h3 class="title">Skills</h3>
+        <div class="skill-grid">        
+        <div class="grid-item">
+            <img src="./img/web-dev.svg" alt="">
+            <div>
+            <h4>Web Development</h4>
+            <ul class="grid-list">
+                <li><p>HTML5</p></li>
+                <li><p>CSS3</p></li>
+                <li><p>JavaScript</p></li>
+            </ul>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="./img/hybrid-apps.svg" alt="">
+            <div>
+            <h4>Hybrid App Development</h4>
+            <ul class="grid-list">
+                <li><p>React Native</p></li>
+                <li><p>Flutter</p></li>
+            </ul>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="./img/cogwheel 1.svg" alt="">
+            <div>
+            <h4>Front & Backend Frameworks</h4>
+            <ul class="grid-list">
+                <li><p>Django</p></li>
+                <li><p>React</p></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="Projects">
+        <h3 class="title">projects</h3>
+        <div class="project-grid">
+            <div class="project-info">
+                <h4>personal portfolio</h4>
+                <p>Simple portfolio project to display past projects in a sleek way.</p>
+                <h5>technologies used</h5>
+                <ul>
+                    <li><p>HTML5</p></li>
+                    <li><p>CSS3</p></li>
+                    <li><p>JavaScript</p></li>
+                    <li><p>Python</p></li>
+                </ul>
+            </div>
+            <div class="project-img">
+                <img class="prjt-img"src="./img/project-img.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="Contact">
+        <h3 class="title-contact">contact</h3>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Your Email">
+            <input type="text" placeholder="Your Message">
+            <button class="contact-btn">submit</button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-text">
+            <p> &copy; All Rights Reserved</p>
+        </div>
+        <div class="footer-icons">
+            <a href="#"><i><img src="./img/github-square-brands 1.svg" alt="#"></i></a>
+            <a href="#"><i><img src="./img/linkedin-brands 1.svg" alt="#"></i></a>
+            <a href="#"><i><img src="./img/twitter-square-brands 1.svg" alt="#"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function Navbar() {
+            var idGetter = document.getElementById("menu");
+            if (idGetter.style.display === "block") {
+                idGetter.style.display = "none";
+            } else {
+                idGetter.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

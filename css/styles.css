@@ -1,0 +1,382 @@
+/* variables */
+:root {
+    --primary: #872DCD;
+    --secondary: #ffffff;
+   
+}
+/* reset */
+body,p,a,ul,li {
+    margin: 0;
+    padding: 0;
+    text-align: none;
+}
+.grid-list li {
+    list-style-type: circle;
+    color: white;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+/* base styles */
+body {
+    background:  #121214;
+    overflow-x: hidden;
+    font-family: 'Rubik', sans-serif;   
+}
+#menu li {
+   padding: 20px;
+   background-color: #2F2E41;
+}
+#menu li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 0 0 10px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.header a h1 {
+    color:var(--secondary);
+    text-decoration: none;
+    font-family: "Saira Stencil One",cursive;
+    margin-left: 20px;
+}
+.flex-holder {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.welcome-text h2 {
+    color: var(--primary);
+    font-weight: 700;
+    margin: 20px 20px;
+    font-size: 35px;
+}
+.hmbgr {
+    color: white;
+    background: var(--primary);
+    padding: 10px 15px;
+}
+.hmbgr-cont {
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    margin: 20px 20px;
+}
+.welcome-text p {
+    color: var(--secondary);
+    margin: 15px 20px
+}
+.welcome-img img {
+    display: none;
+}
+.btn {
+    background: var(--primary);
+    border: none;
+    color: var(--secondary);
+    text-align: center;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    margin: 10px 0px 0px 20px;
+}
+#Skills {
+    margin-top: 40px;
+}
+#Projects {
+    margin-top: 40px;
+}
+#Contact {
+    margin-top: 40px;
+}
+.skill-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "." "." ".";
+}
+.grid-item {
+    display:flex;
+}
+.grid-item img {
+    display: inline-block;
+    margin: 20px;
+}
+.grid-item h4 {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.grid-list li p {
+    color: var(--primary);
+}
+.grid-list li {
+    padding: 2px;
+    color: var(--secondary);    
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+    padding: 0 20px;
+}
+.project-info h4 {
+    color: var(--primary);
+    text-transform: uppercase;
+}
+.project-info p {
+    color: var(--secondary);
+    font-weight: 100;
+}
+.project-info h5 {
+    color: var(--primary);
+    text-transform: uppercase;
+}
+.project-info li {
+    list-style-type: circle;
+    color: white;
+    padding: 2px;
+    margin-left: 20px;
+}
+.project-info li p {
+    color: var(--secondary);
+}
+
+.prjt-img {
+    width: 300px;
+    height: 200px;
+    margin-left: 10px;
+}
+#Contact {
+    border: 5px solid var(--primary);
+    margin: 0px 20px; 
+}
+.title-contact {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contact-form ::placeholder {
+    color: var(--primary);
+    font-size:16px;
+}
+.contact-form input {
+    display: block;
+    background: none;
+    border: none;
+    margin:50px 20px;
+    border-bottom: 3px solid white;
+    padding: 0 100px 10px 0;
+}
+.contact-btn {
+    background: none;
+    border: 3px solid white;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    width: 150px;
+    text-transform: uppercase;
+    margin: 0 0px 40px 70px;
+}
+footer {
+    margin-top: 50px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+}
+.footer-text {
+    color: white;
+    padding: 10px;
+}
+.footer-icons {
+    padding: 5px 10px;
+    font-size: 5px;
+}
+.footer-icons i {
+    padding: 0px 5px;
+}
+/* fonts */
+.title {
+    text-align: center;
+    color: white;
+    margin: 20px;
+    text-transform: uppercase;
+    background: #2F2E41;
+    
+}
+
+/* small tablet styles */
+
+@media screen and (min-width: 620px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .welcome-img img {
+        display: block;
+        width: 300px;
+        height: 200px;
+    }
+    .skill-grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr
+    }
+    #Contact {
+        margin-top: 40px;
+        width: 600px;
+    }
+    .contact-form input {
+        margin-left: 110px;
+        padding: 0 200px 0 0;
+    }
+    .contact-btn {
+        margin: 0px 0px 40px 225px;
+    }
+
+}
+/* large tablets & laptops */
+
+@media screen and (min-width: 960px){
+    body {
+        font-size: 18px;
+    }
+    .hmbgr-cont  {
+        display: none;
+    }
+    .welcome-img img {
+        width: 400px;
+        height: 400px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    #menu li {
+        background: none;
+        margin-top: 20px;
+    }
+    .skill-grid {
+        margin-left: 40px;
+    }
+    .grid-item h4 {
+        font-size: 16px
+    }
+    .project-grid {
+        margin-left: 40px;
+    }
+    .project-img {
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    #Contact {
+        margin-left: 150px;
+    }
+    .welcome-text h2 {
+        font-size: 40px;
+    }
+    .welcome-text {
+        margin-top: 100px;
+    }
+}
+
+/* Desktop styles */
+
+@media screen and (min-width: 1200px){
+    body {
+        font-size: 20px;
+    }
+    .welcome-img img {
+        width: 500px;
+        height: 500px;
+    }
+    .welcome-text h2 {
+        font-size: 45px;
+    }
+    #Contact {
+        margin: auto;
+    }
+}
+@media screen and (min-width:1920px) {
+    body {
+        font-size: 25px;
+    }
+    .welcome-text {
+        margin-left: 50px
+    }
+    .welcome-text h2 {
+        font-size: 72px;
+    }
+    .welcome-text p {
+        font-size: 30px;
+    }
+    .btn {
+    font-size: 24px;
+    width: 250px;
+    height: 50px;    
+    padding: 10px 40px;
+    margin: 10px 0px 0px 20px;
+    }
+    .welcome-img img {
+        width: 1000px;
+        height: 500px;
+    }
+    .grid-item img {
+        width: 200px;
+        height: 200px;
+    }
+    .grid-item h4 {
+        font-size: 28px;
+    }
+    .grid-list {
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+    #Skills {
+        margin-top: 200px
+    }
+    #Projects {
+        margin-top: 50px;
+    }
+    .skill-grid {
+        grid-row-gap: 100px;
+    }
+    .project-info h4 {
+        font-size: 28px;
+    }
+    .project-info p {
+        font-size: 28px;
+    }
+    .project-info h5 {
+        font-size: 28px
+    }
+    .project-img img {
+        width: 600px;
+        height: 400px;
+    }
+    #Contact {
+        margin-top: 200px;
+        width: 1500px;
+    }
+    #Contact h3 {
+        font-size: 28px;
+    }
+    #Contact input {
+        margin: auto;
+        padding;
+    }
+}
+
